@@ -1,128 +1,63 @@
-Snake Battle Fiesta
+# 🐍 Snake Battle Fiesta
 
-A fast-paced, action-packed retro-arcade battle arena built using HTML5 Canvas, Tailwind CSS, and pure JavaScript. Battle against AI-controlled snakes, grab fruit power-ups, and feast on the remains of your defeated opponents!
 
-🌟 Key Features
 
-🤖 AI Bot Opponents: Battle up to 3 computer-controlled snakes navigating the grid in real time.
+An action-packed, web-based arcade battle arena where you battle smart AI snakes, consume special power-up fruits, and harvest eliminated competitors to dominate the leaderboard!
 
-💥 Body-to-Fruit Explosion: Defeated snakes disintegrate into a cluster of eatable fruits for high-stakes looting!
+---
 
-🎨 Skin Customization: Choose from 6 custom snake skins before entering the match:
+## 🌟 Key Features
 
-🟢 Emerald
+* **🤖 Smart AI Bots**: Battle against multiple computer-controlled snakes (`Viper AI`, `Cyber Cobra`, `Shadow Python`, and `Gold Anaconda`).
+* **💥 Body-to-Fruit Explosion**: When a snake crashes into a wall, tail, or another competitor, its entire body disintegrates into eatable fruits for others to scavenge!
+* **🍎 Dynamic Power-Up Fruits**:
+  * **Red Apple**: Standard point boost and length growth.
+  * **Yellow Banana**: Temporary speed boost.
+  * **Blueberry**: 2x score multiplier.
+  * **Green Grape**: Shrinks your snake's length to improve agility.
+  * **Star Fruit**: Magnetizes nearby fruits directly to your snake.
+* **🎨 Custom Skins**: Choose your aesthetic before the match begins (Emerald, Cyber, Rainbow, Ruby, Amber, or Violet).
+* **📱 Cross-Platform Controls**: Play effortlessly with Keyboard (`WASD` / `Arrow Keys`), Touch Gestures, or the on-screen D-Pad for mobile support.
+* **🎵 Web Audio Sound FX**: Retro procedural audio synthesized live via the Web Audio API (no external MP3 downloads required).
 
-🌐 Cyber
+---
 
-🌈 Rainbow
+## 🕹️ How to Play
 
-🔴 Ruby
+### Controls
+| Control Type | Actions |
+| :--- | :--- |
+| **Keyboard** | `W`/`Up Arrow` (Up), `S`/`Down Arrow` (Down), `A`/`Left Arrow` (Left), `D`/`Right Arrow` (Right) |
+| **Mobile Touch** | Swipe up, down, left, or right on the play area |
+| **On-Screen D-Pad** | Tap the directional buttons at the bottom of the screen |
 
-🟡 Amber
+### Rules
+1. **Eat Fruits**: Grow your score and snake length while collecting fruit power-ups.
+2. **Outmaneuver Competitors**: Force AI snakes to crash into your body or arena walls.
+3. **Scavenge Defeated Snakes**: Collect fruit remnants left behind by defeated snakes to rapidly increase your score.
+4. **Survive**: Don't hit walls or other snakes' bodies!
 
-🟣 Violet
+---
 
-🍎 Dynamic Fruits & Power-Ups:
+## 🛠️ Tech Stack
 
-🍎 Apple: Standard points (+10)
+* **Rendering Engine**: Native HTML5 Canvas 2D API
+* **Styling**: Tailwind CSS
+* **Audio Engine**: Web Audio API (Procedural Synthesizer)
+* **Logic**: Vanilla JavaScript (ES6+ Modules & Game Loops)
 
-🍌 Banana: Temporary Speed Boost (+20)
+---
 
-🫐 Blueberry: 2x Score Multiplier (+25)
+## 🚀 Quick Start / Local Setup
 
-🍇 Grape: Shrinks Snake Length (+35)
+No external node packages or build steps required! Simply clone and open:
 
-⭐ Star: Fruit Magnet effect (+50)
+```bash
+# 1. Clone this repository
+git clone [https://github.com/YOUR-USERNAME/snake-battle-fiesta.git](https://github.com/YOUR-USERNAME/snake-battle-fiesta.git)
 
-🏆 Live Arena Leaderboard: Tracks live scores, player ranks, and active/eliminated statuses.
+# 2. Navigate to the folder
+cd snake-battle-fiesta
 
-🔊 Synthesized Audio: Built-in Web Audio API synthesizer for sound effects (eating, power-ups, game over) with no external audio file dependencies.
-
-🕹️ Cross-Platform Controls: Full support for Keyboard (WASD / Arrows), Mobile Touch Swipes, and an On-Screen D-Pad.
-
-⚙️ Customizable Match Rules: Toggle solid wall collisions vs. pass-through borders, plus game speed settings (Chill, Normal, Turbo).
-
-🕹️ How to Play
-
-Controls
-
-Input Method
-
-Action
-
-W / Up Arrow
-
-Move Up
-
-S / Down Arrow
-
-Move Down
-
-A / Left Arrow
-
-Move Left
-
-D / Right Arrow
-
-Move Right
-
-P
-
-Pause / Resume
-
-Touch Swipe
-
-Swipe direction on canvas (Mobile)
-
-D-Pad
-
-On-screen directional buttons (Mobile)
-
-Game Rules
-
-Eat fruits scattered around the arena to grow your snake and earn points.
-
-Avoid running into walls (unless Pass-Through is enabled) or other snakes' bodies.
-
-Outmaneuver AI bots—force them to crash into your body to turn them into valuable fruits!
-
-Collect star power-ups to activate the magnet effect and pull nearby fruits toward your snake head.
-
-🚀 Quick Start & Deployment
-
-Run Locally
-
-Since the entire game is built into a single self-contained HTML file, running it locally is effortless:
-
-Clone or download this repository:
-
-git clone https://github.com/your-username/snake-battle-fiesta.git
-
-
-Navigate into the repository folder.
-
-Open index.html in any modern web browser (Chrome, Firefox, Safari, Edge).
-
-Deploy to GitHub Pages
-
-To publish and share your game live online for free:
-
-Push this repository to GitHub.
-
-Go to Settings > Pages in your GitHub repository menu.
-
-Under Build and deployment, select main branch and / (root) folder.
-
-Click Save. Your game will be live at https://your-username.github.io/snake-battle-fiesta/ within minutes!
-
-🛠️ Tech Stack
-
-HTML5 Canvas: 2D rendering engine for smooth grid drawing, animations, and particle effects.
-
-Tailwind CSS (CDN): Modern utility-first CSS styling for UI overlays, glassmorphism cards, and responsive controls.
-
-Vanilla JavaScript (ES6+): Complete game loop physics, AI decision-making algorithms, collision detection, and dynamic state management.
-
-Web Audio API: Synthesizes sound frequencies dynamically on user interaction without requiring external .wav or .mp3 assets.
-
-FontAwesome & Google Fonts: Clean iconography and typography ('Fredoka' & 'Outfit').
+# 3. Open index.html in any modern browser
+open index.html
